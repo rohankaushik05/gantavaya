@@ -48,7 +48,7 @@ useEffect(() => {
       const token = await getToken();
 
       const response = await fetch(
-        `http://localhost:5000/api/payments/verify/${encodeURIComponent(sessionId)}`,
+        `https://gantavaya.onrender.com/api/payments/verify/${encodeURIComponent(sessionId)}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -89,7 +89,7 @@ useEffect(() => {
       try {
         const token = await getToken();
 
-        const response = await fetch("http://localhost:5000/api/rides/role", {
+        const response = await fetch("https://gantavaya.onrender.com/api/rides/role", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -123,7 +123,7 @@ useEffect(() => {
 
     try {
       const token = await getToken();
-      const response = await fetch("http://localhost:5000/api/rides", {
+      const response = await fetch("https://gantavaya.onrender.com/api/rides", {
         headers: { Authorization: `Bearer ${token}` },
       });
 
@@ -150,7 +150,7 @@ useEffect(() => {
       const token = await getToken();
 
       const response = await fetch(
-        `http://localhost:5000/api/rides/${rideId}/cancel`,
+        `https://gantavaya.onrender.com/api/rides/${rideId}/cancel`,
         {
           method: "PATCH",
           headers: {
@@ -181,7 +181,7 @@ useEffect(() => {
 
     try {
       const token = await getToken();
-      const response = await fetch("http://localhost:5000/api/rides", {
+      const response = await fetch("https://gantavaya.onrender.com/api/rides", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

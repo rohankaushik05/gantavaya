@@ -9,7 +9,7 @@ import {
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
-const API_URL = "http://localhost:5000/api/rides";
+const API_URL = "https://gantavaya.onrender.com/api/rides";
 
 function RecenterMap({ position }) {
   const map = useMap();

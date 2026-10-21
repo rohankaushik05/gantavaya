@@ -2,7 +2,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { useAuth } from "@clerk/react";
 
-const API_URL = "http://localhost:5000/api/rides";
+const API_URL = "https://gantavaya.onrender.com/api/rides";
 
 export default function SupportCenter({ role }) {
   const { getToken } = useAuth();
